@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Đơn hàng</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="css/library.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-in"><img src="css/skin/logo.png" alt="Loading..."></div>
+    </div>
+    <div class="wrapper page-tiny" id="page-tiny">
+      <header class="header" id="header"> 
+        <div class="container header-mi"><a class="logo" href="index.html"><img src="css/skin/logo.png" alt=""></a>
+          <div class="form-search" id="form-search">
+            <div class="form-group">
+              <button class="close-search search-toggle far fa-chevron-left"></button>
+              <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm">
+              <button class="fa-search far form-search-icon"></button>
+            </div>
+            <div class="panel-suggest">
+              <div class="block"> 
+                <div class="tt">Tìm kiếm phổ biến  </div>
+                <div class="list-tags"> <a class="list-tags-item" href="#">sua chua </a><a class="list-tags-item" href="#">banh mi </a><a class="list-tags-item" href="#">thit heo </a><a class="list-tags-item" href="#">ga ta </a><a class="list-tags-item" href="#">suon non </a><a class="list-tags-item" href="#">ca hoi </a><a class="list-tags-item" href="#">sua tuoi</a></div>
+              </div>
+              <div class="block"> 
+                <div class="tt">Ưu đãi đặc biệt  </div>
+                <div class="list-promo"> 
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/1.jpg"></div>
+                    <div class="text">Bia - bánh giảm đến 26%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/2.jpg"></div>
+                    <div class="text">Dầu ăn giảm đến 20%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/3.png"></div>
+                    <div class="text">Bộ quà TẾT giảm đến 20%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/4.jpg"></div>
+                    <div class="text">Giặt, xả giảm đến 30%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/5.jpg"></div>
+                    <div class="text">Sữa chua 1 lốc tặng 1 hộp</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/6.jpg"></div>
+                    <div class="text">Gia dụng giảm đến 49%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/1.jpg"></div>
+                    <div class="text">Bia - bánh giảm đến 26%</div>
+                  </div>
+                  <div class="list-promo-item"> <a class="absolute" href="products.html"></a>
+                    <div class="thumb"><img src="css/skin/promo/1.jpg"></div>
+                    <div class="text">Bia - bánh giảm đến 26%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a class="link2user" href="invoid.html">Đơn hàng <br> của Bạn </a><a class="cart" href="cart.html"> <span class="d-flex align-items-center"><i class="far fa-shopping-cart"><span class="qty">5</span></i><span class="cpay"><span class="cpay-tt block">Thanh toán </span><span class="cpay-total block">1.045.000đ</span></span></span></a>
+        </div>
+        <div class="container mnavbar">
+          <div class="mnavbar-around d-flex">
+            <div class="menu-toggle btn-menu"><i class="icon bi bi-list"></i><span class="block text">menu</span></div>
+            <div class="searchbar flex-fill">
+              <div class="form-group">
+                <button class="absolute search-toggle"></button>
+                <input class="form-control" type="text" placeholder=" Tìm kiếm sản phẩm" read-only>
+                <button class="far fa-search"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="navigate-dym" id="navigate">
+        <div class="container"> 
+          <div class="menu">
+            <div class="menu-header">
+              <div class="d-flex align-items-center">
+                <button class="btn-fake close-menu" id="close-menu"><i class="far fa-times"></i><span class="text">Đóng </span></button><a class="btn-fake" href="index.html"><i class="far fa-home"></i><span class="text">Trang chủ </span></a>
+                <div class="tt text-uppercase">Danh mục sản phẩm</div>
+              </div>
+            </div>
+            <div class="menu-body">
+              <ul class="menu-slide">
+                <li><a href="promotions.html" title="" alt="" target="_self">Khuyến mãi sốc <img class="ml-1" src="css/skin/percent.png" alt="" width="18px"></a></li>
+                <li>
+                  <div class="menu-item-text">Thịt, cá, trứng, hải sản<span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/1.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/2.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/3.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/7.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/8.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/9.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Rau củ, trái cây <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/7.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/2.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/3.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Thực phẩm đông mát <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/7.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/2.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/3.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Miến, mì, cháo, phở <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/7.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/2.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/3.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Miến, mì, cháo, phở <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Gạo, bột, đồ khô <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Dầu ăn, nước chấm, gia vị <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Bia, nước giải khát <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Sữa các loại <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Bánh kẹo các loại <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="menu-item-text">Chăm sóc cá nhân <span class="count">(28)</span></div>
+                  <ul class="menu-slide-sub">
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/4.png" alt=""></div>
+                      <div class="text">Thịt các loại </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/5.png" alt=""></div>
+                      <div class="text">Cá, hải sản </div>
+                    </li>
+                    <li class="position-relative"><a class="absolute" href="products.html"></a>
+                      <div class="thumb-res square"><img class="fit-cover" src="css/skin/menu/6.png" alt=""></div>
+                      <div class="text">Trứng gà, vịt, cút </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="mainer">
+        <div class="main-sm bg-white mb-2 p-3">
+          <div class="tt-xs border-bottom mx-n3 px-3 mb-3 pb-3 fw-medium"><i class="far fa-user-circle mr-1"></i> Thông tin cá nhân </div>
+          <div class="d-flex align-items-center mb-3"> 
+            <div class="tt mb-0 mr-2">Hi, Le Phuong &nbsp;</div><a class="text-primary mr-auto" href="invoid.html">Đơn hàng <i class="far fa-chevron-right"></i></a><a class="btn btn-xs btn-info" href="logout.html"><i class="far fa-power-off mr-1"></i> Đăng xuất </a>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 gx-3">
+            <div class="col">
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" value="Le Phuong">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" value="0912 345 678" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="tt mb-1"><i class="far fa-map-marker-alt mr-2"></i> Địa chỉ nhận hàng </div>
+          <div class="form-group mb-3">
+            <div class="form-check">
+              <input class="form-check-input" id="radio1a" type="radio" checked name="flexRadioDefault">
+              <label class="form-check-label" for="radio1a">127 Tăng Nhơn Phú - Phường Phước Long B - TP. Thủ Đức - Hồ Chí Minh</label><a class="text-info" href="javascript:"> </a>
+            </div>
+          </div>
+          <div class="tt text-success" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" role="button"><i class="far fa-plus"></i> Thêm địa chỉ mới </div>
+          <div class="collapse" id="collapse1">
+            <div class="row row-cols-1 row-cols-md-2 gx-3">
+              <div class="col">
+                <div class="form-group mb-3">
+                  <input class="form-control" type="text" placeholder="Nhập họ tên">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <input class="form-control" type="text" placeholder="Số điện thoại">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <input class="form-control" type="text" placeholder="Số nhà, tên đường">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <select class="form-select">
+                    <option>Chọn Tỉnh/Thành phố </option>
+                    <option>Hồ Chí Minh</option>
+                    <option>Hà Nội</option>
+                    <option>Hà Giang</option>
+                    <option>Cao Bằng</option>
+                    <option>Bắc Kạn</option>
+                    <option>Tuyên Quang</option>
+                    <option>Lào Cai</option>
+                    <option>Điện Biên</option>
+                    <option>Lai Châu</option>
+                    <option>Sơn La</option>
+                    <option>Yên Bái</option>
+                    <option>Hoà Bình</option>
+                    <option>Thái Nguyên</option>
+                    <option>Lạng Sơn</option>
+                    <option>Quảng Ninh</option>
+                    <option>Bắc Giang</option>
+                    <option>Phú Thọ</option>
+                    <option>Vĩnh Phúc</option>
+                    <option>Bắc Ninh</option>
+                    <option>Hải Dương</option>
+                    <option>Hải Phòng</option>
+                    <option>Hưng Yên</option>
+                    <option>Thái Bình</option>
+                    <option>Hà Nam</option>
+                    <option>Nam Định</option>
+                    <option>Ninh Bình</option>
+                    <option>Thanh Hoá</option>
+                    <option>Nghệ An</option>
+                    <option>Hà Tĩnh</option>
+                    <option>Quảng Bình</option>
+                    <option>Quảng Trị</option>
+                    <option>Thừa Thiên Huế</option>
+                    <option>Đà Nẵng</option>
+                    <option>Quảng Nam</option>
+                    <option>Quảng Ngãi</option>
+                    <option>Bình Phước</option>
+                    <option>Tây Ninh</option>
+                    <option>Bình Dương</option>
+                    <option>Đồng Nai</option>
+                    <option>Bà Rịa - Vũng Tàu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <select class="form-select">
+                    <option>Chọn Quận/Huyện </option>
+                    <option>Quận 1</option>
+                    <option>Quận 2</option>
+                    <option>Quận 3</option>
+                    <option>Quận 4</option>
+                    <option>Quận 5</option>
+                    <option>Quận 6</option>
+                    <option>Quận 7</option>
+                    <option>Quận 8</option>
+                    <option>Quận 9</option>
+                    <option>Quận 10</option>
+                    <option>Quận 11</option>
+                    <option>Quận 12</option>
+                    <option>Bình Tân</option>
+                    <option>Bình Thạnh</option>
+                    <option>Gò Vấp</option>
+                    <option>Phú Nhuận</option>
+                    <option>Tân Bình</option>
+                    <option>Tân Phú</option>
+                    <option>Thủ Đức</option>
+                    <option>Bình Chánh</option>
+                    <option>Cần Giờ</option>
+                    <option>Củ Chi</option>
+                    <option>Hóc Môn</option>
+                    <option>Nhà Bè</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <select class="form-select">
+                    <option>Chọn Phường/Xã</option>
+                    <option>Phường 1</option>
+                    <option>Phường 2</option>
+                    <option>Phường 3</option>
+                    <option>Phường 4</option>
+                    <option>Phường 5</option>
+                    <option>Phường 6</option>
+                    <option>Phường 7</option>
+                    <option>Phường 8</option>
+                    <option>Phường 9</option>
+                    <option>Phường 10</option>
+                    <option>Phường 11</option>
+                    <option>Phường 12</option>
+                    <option>Phường 13</option>
+                    <option>Phường 14</option>
+                    <option>Phường 15</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="text-center"> 
+              <button class="btn btn-primary" type="button">Thêm địa chỉ mới        </button>
+            </div>
+          </div>
+        </div>
+        <div class="main-sm bg-white mb-2 p-3">
+          <div class="tt-xs border-bottom mx-n3 px-3 mb-3 pb-3 fw-medium"><i class="far fa-lock mr-2"></i> Đổi mật khẩu </div>
+          <form class="form-validate">
+            <div class="form-x-shorter">
+              <div class="row mb-3 row mb-3">
+                <label class="col-sm-3 col-form-label">Mật khẩu cũ</label>
+                <div class="col-sm-9">
+                  <input class="form-control" type="password" placeholder="Mật khẩu cũ" required>
+                </div>
+              </div>
+              <div class="row mb-3 row mb-3">
+                <label class="col-sm-3 col-form-label">Mật khẩu mới </label>
+                <div class="col-sm-9">
+                  <input class="form-control" type="password" placeholder="Mật khẩu mới" required>
+                </div>
+              </div>
+              <div class="row mb-3 row mb-3">
+                <label class="col-sm-3 col-form-label">Nhập lại mật khẩu mới </label>
+                <div class="col-sm-9">
+                  <input class="form-control" type="password" placeholder="Nhập lại mật khẩu mới" required>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9">
+                  <button class="btn btn-danger" type="submit">Cập nhật mật khẩu </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer" id="footer"> 
+        <div class="container"> 
+          <div class="footer-bg">
+            <div class="row"> 
+              <div class="col-12 col-sm-5 footer-col"> 
+                <div class="text-block d-flex align-items-center"><span class="fa fa-truck"></span>
+                  <div class="text">Đặt online giao tận nhà</div>
+                </div>
+                <div class="text-block d-flex align-items-center"><span class="fa fa-calendar-day"></span>
+                  <div class="text">7 ngày đổi trả hàng </div>
+                </div>
+                <div class="text-block d-flex align-items-center"><span class="fa fa-dolly-flatbed"></span>
+                  <div class="text">Freeship đơn hàng từ 500K</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4 footer-col"> 
+                <ul class="footer-menu-list list-style-angle"> 
+                  <li><a href="#">Chính sách giao hàng  </a></li>
+                  <li><a href="#">Chính sách mua hàng  </a></li>
+                  <li><a href="#">Chính sách đổi trả  </a></li>
+                  <li><a href="#">Hướng dẫn mua hàng  </a></li>
+                  <li><a href="#">Giới thiệu  </a></li>
+                  <li><a href="#">Liên hệ </a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-3 footer-col"> 
+                <div class="list-icon-social"><a class="btn rounded-circle bg-gradient btn-facebook" href="#" title="" alt="" target="_self"><span class="bi bi-facebook"></span></a><a class="btn rounded-circle bg-gradient btn-youtube" href="#" title="" alt="" target="_self"><span class="bi bi-youtube"></span></a><a class="btn rounded-circle bg-gradient btn-zalo" href="#" title="" alt="" target="_self"><span class="icon-zalo-chat"></span></a>
+                </div>
+                <div class="relative mt-3"><a href="#" target="_blank"><img src="css/skin/thongbao-bct.png" width="110px" alt=""></a></div>
+              </div>
+            </div>
+            <div class="copyr">
+               © 2023 Hoàng Minh Market. Powered by HoangMinh.</div>
+          </div>
+        </div>
+      </footer>
+      <div id="dockCalc"></div>
+      <nav class="dock-mobile" id="dockMobile">
+        <ul class="menu-dock"> 
+          <li><a href="products.html"><span class="bi bi-grid"> </span>
+              <div class="text">Sản phẩm </div></a></li>
+          <li><a href="promotions.html"><span class="bi bi-percent"> </span>
+              <div class="text">Khuyến mãi</div></a></li>
+          <li><a href="cart.html"><span class="bi bi-cart2"><span class="qty">5</span></span>
+              <div class="text">Giỏ hàng </div></a></li>
+          <li><a href="user.html"><span class="bi bi-person"> </span>
+              <div class="text">Tài khoản  </div></a></li>
+        </ul>
+      </nav>
+    </div>
+    <button class="far fa-chevron-up" id="backtop" role="button"></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+    <script src="css/js/main.min.js"></script>
+    <script src="js/parsley.min.js"></script>
+    <script>
+      $(function(){
+          $(".form-validate").parsley();
+      });
+      
+    </script>
+    <script src="js/parsley.min.js"></script>
+    <script>
+      $(function(){
+          $(".form-validate").parsley();
+      });
+      
+    </script>
+  </body>
+</html>

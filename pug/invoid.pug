@@ -1,0 +1,120 @@
+extends template/template
+block vars
+    - title = 'Đơn hàng'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+    - login = false
+
+block mainer
+    main.mainer
+        .main-sm.bg-white.mb-2.p-3
+            .d-flex.align-items-center.mb-3 
+                .tt.mb-0.mr-2 Hi, Le Phuong
+                a.text-primry(href="user.html") Thay đổi thông tin !{'<i class="far fa-chevron-right"></i>'}
+            .row.row-cols-1.row-cols-md-2.gx-3
+                .col
+                    .form-group.mb-3
+                        input.form-control(type="text" value="Le Phuong")
+                .col
+                    .form-group.mb-3
+                        input.form-control(type="text" value="0912 345 678" readonly)
+            .tt.mb-1 !{'<i class="far fa-map-marker-alt mr-2"></i>'} Địa chỉ nhận hàng 
+            div 127 Tăng Nhơn Phú - Phường Phước Long B - TP. Thủ Đức - Hồ Chí Minh      
+        .main-sm.bg-white.mb-2.p-3
+            .tt-xs.fw-medium.border-bottom.mx-n3.px-3.mb-3.pb-3 !{'<i class="far fa-shopping-cart mr-2"></i>'} Đơn hàng đã mua 
+            .info 
+                .tt.text-primary ĐH #123093475
+                .text-success !{'<i class="far fa-check-circle"></i>'} Đã hoàn thành 
+                div
+                    span.text-muted Người nhận: 
+                    b A Hoàng (0123 456 666)
+                div
+                    span.text-muted Địa chỉ: 
+                    b 127 Tăng Nhơn Phú - Phường Phước Long B - TP. Thủ Đức - Hồ Chí Minh 
+            hr
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/1.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Ngũ cốc trái cây Kellogg's Froot Loops hộp 300g
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/2.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Nước mắm nhĩ Hưng Thịnh 750ml
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/3.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Hạt nêm chay nấm hương Maggi 450g
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .text-right 
+                div
+                    | Tiền hàng: 
+                    b.text-dark 300.000!{'<u>đ</u>'}
+                div Phí giao hàng: 0
+                div
+                    | Tổng thanh toán: 
+                    b.text-danger 300.000!{'<u>đ</u>'}
+                .fs-12.text-muted.fst-italic (Giá chưa bao gồm VAT)
+                .text-success !{'<i class="far fa-check-circle"></i>'} Đã thanh toán  
+        .main-sm.bg-white.mb-2.p-3
+            .info 
+                .tt.text-primary ĐH #123093563
+                .text-success !{'<i class="far fa-check-circle"></i>'} Đã hoàn thành 
+                div
+                    span.text-muted Người nhận: 
+                    b A Long (0123 456 777)
+                div
+                    span.text-muted Địa chỉ: 
+                    b 127 Tăng Nhơn Phú - Phường Phước Long B - TP. Thủ Đức - Hồ Chí Minh 
+            hr
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/1.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Ngũ cốc trái cây Kellogg's Froot Loops hộp 300g
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/2.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Nước mắm nhĩ Hưng Thịnh 750ml
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .d-flex
+                .p-2.thumb
+                    img(src="css/skin/products/3.jpg" alt="" width="80px")
+                .p-2.bio.flex-grow-1.px-lg-4
+                    div Hạt nêm chay nấm hương Maggi 450g
+                    .text-muted Số lượng: 1
+                .p-2.end 
+                    div.fw-bold 105.000đ
+                    del.text-muted 120.000đ
+            .text-right 
+                div
+                    | Tiền hàng: 
+                    b.text-dark 300.000!{'<u>đ</u>'}
+                div Phí giao hàng: 0
+                div
+                    | Tổng thanh toán: 
+                    b.text-danger 300.000!{'<u>đ</u>'}
+                .fs-12.text-muted.fst-italic (Giá chưa bao gồm VAT)
+                .text-success !{'<i class="far fa-check-circle"></i>'} Đã thanh toán  

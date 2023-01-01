@@ -1,0 +1,19 @@
+//- mixin products
+mixin pro_item(img, tt)
+    .block 
+        .thumb-res.wide-lg 
+            a(href="products.html" role="button"): img(src='css/skin/products/'+img)
+        .info 
+            .tt=tt
+            .price 
+                span.price-sale 250.000!{'<u>đ</u>'}
+                del.price-origin 550.000!{'<u>đ</u>'}
+                span.icon-sale -20%
+        .box-buy 
+            a.btn-addcart.align-items-center.justify-content-center(href="javascript:" onclick="$(this).hide();") chọn Mua
+            .quantity.d-flex 
+                .d-flex.align-items-center.justify-content-center.down: span.far.fa-minus
+                input.number(type="tel" value="1")
+                .d-flex.align-items-center.justify-content-center.up: span.far.fa-plus 
+            
+//- product detail

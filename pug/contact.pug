@@ -1,0 +1,60 @@
+extends template/template
+block vars
+    - title = 'Liên Hệ'
+    - menu_active = 'contact'
+    - wrapper_class = ''
+    - wrapper_id = ''
+    - home_slider = false
+    - banner_top = true
+    - banner_image = 'banner.jpg'
+    - login = false
+
+append breadcrumb 
+    +breadcrumb({}, title)
+block mainer
+    main.mainer
+        .container.py-5 
+            .row
+                .col-md-6.col-xl-5.mb-4.order-md-2.pl-xl-5
+                    h2.tt-md.text-uppercase.text-primary Thông tin liên hệ
+                    .d-width.border-bottom.border-4.border-danger.mb-45(width="32")
+                    div
+                        .tt.text-uppercase=companyName
+                        +contact_info()
+                .col-md-6.col-xl-7.mb-4.order-md-1
+                    h2.tt-md.text-uppercase.text-primary Form liên hệ
+                    .d-width.border-bottom.border-4.border-danger.mb-45(width="32")
+                    form.form-validate.material-form
+                        .mb-4.desc Nếu bạn có bất kỳ câu hỏi hoặc thắc mắc, các ý kiến đóng góp, vui lòng sử dụng form bên dưới để gửi và chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.
+                        //- .mb-4.desc If you have any questions or comments, or if you would like to contact me for a quote, please use the form below and we will get back to you as soon as possible.
+                        .row.gx-3
+                            .col-lg-6    
+                                .form-group.mb-3
+                                    input.form-control(type="text" required)
+                                    label.label-text Tên của bạn
+                            .col-lg-6    
+                                .form-group.mb-3
+                                    input.form-control(type="tel")
+                                    label.label-text Điện thoại
+                            .col-lg-6    
+                                .form-group.mb-3
+                                    input.form-control(type="email" required)
+                                    label.label-text Email
+                            .col-lg-6    
+                                .form-group.mb-3
+                                    input.form-control(type="text" required)
+                                    label.label-text Tiêu đề
+                            .col-12  
+                                .form-group.mb-3
+                                    textarea.form-control(rows="5" required)
+                                    label.label-text Nội dung
+                            .col-12.text-center
+                                .d-flex.flex-wrap.align-items-center
+                                    div(class="g-recaptcha my-2 mr-3" data-sitekey="6LcbK98UAAAAALQI9rCCE3Vlm5LZtCt_Fdo7V4Wc")
+                                    button(type="submit" class="btn btn-primary px-4") Gửi liên hệ
+
+            .map.thumb-res.wide-sm.rounded-3.mt-45#map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7450.352746287509!2d105.802275!3d20.985566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc75010473226bcd!2sFun%20Face!5e0!3m2!1sen!2sus!4v1639574940396!5m2!1sen!2sus" width="600" height="450" style="border:0;", allowfullscreen, loading="lazy")
+
+            script(src="https://www.google.com/recaptcha/api.js")
+            +parsley()

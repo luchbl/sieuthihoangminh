@@ -1,0 +1,255 @@
+block menu
+    nav.navigate-dym#navigate
+        .container 
+            .menu
+                .menu-header
+                    .d-flex.align-items-center
+                        button.btn-fake.close-menu#close-menu
+                            i.far.fa-times
+                            span.text Đóng 
+                        a.btn-fake(href="index.html")
+                            i.far.fa-home
+                            span.text Trang chủ 
+                        .tt.text-uppercase Danh mục sản phẩm
+                .menu-body
+                    ul.menu-slide
+                        li(class=(menu_active=='promotions' ? 'active' : ''))
+                            a(href="promotions.html" title="" alt="" target="_self")
+                                | Khuyến mãi sốc 
+                                img.ml-1(src="css/skin/percent.png", alt="" width="18px")
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Thịt, cá, trứng, hải sản
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/1.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/8.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/9.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Rau củ, trái cây 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Thực phẩm đông mát 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Miến, mì, cháo, phở 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Miến, mì, cháo, phở 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Gạo, bột, đồ khô 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Dầu ăn, nước chấm, gia vị 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Bia, nước giải khát 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Sữa các loại 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Bánh kẹo các loại 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        li(class=(menu_active=='products' ? 'active' : ''))
+                            .menu-item-text
+                                | Chăm sóc cá nhân 
+                                span.count (28)
+                            ul.menu-slide-sub
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                                    .text Thịt các loại 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                                    .text Cá, hải sản 
+                                li.position-relative
+                                    a.absolute(href="products.html")
+                                    .thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                                    .text Trứng gà, vịt, cút 
+                        

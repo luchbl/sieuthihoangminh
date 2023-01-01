@@ -1,0 +1,261 @@
+extends template/template
+block vars
+    - title = 'Home'
+    - wrapper_class = 'home-page'
+    - wrapper_id = 'home-page'
+    - home_slider = true
+    - login = false
+
+block mainer
+    main.mainer
+        .home-slider 
+            .carousel-cell
+                a.img-slide(href=""): img(src="css/skin/slider/slider_01.jpg", alt="")
+            .carousel-cell
+                a.img-slide(href=""): img(src="css/skin/slider/slider_02.jpg", alt="")
+            .carousel-cell
+                a.img-slide(href=""): img(src="css/skin/slider/slider_03.jpg", alt="")
+        .m-cate-slider.carousel-single 
+            .carousel-cell 
+                .m-cate-group.d-flex.flex-wrap  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/1.png", alt="")
+                        span.text.text-center Thịt các loại  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                        span.text.text-center Trái cây  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                        span.text.text-center Rau củ
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                        span.text.text-center Cá, hải sản  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                        span.text.text-center Đồ hộp   
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                        span.text.text-center Nước ngọt 
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                        span.text.text-center Sữa các loại  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/8.png", alt="")
+                        span.text.text-center Bánh bông lan tươi 
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/9.png", alt="")
+                        span.text.text-center Củ, quả  
+                    a.block.m-cate-item(href="javascript:void(0)" class="menu-toggle")
+                        span.thumb-res.square: .absolute.d-flex.align-items-center.justify-content-center.fal.fa-bars.fa-2x 
+                        span.text.text-center Xem các nhóm khác 
+            .carousel-cell 
+                .m-cate-group.d-flex.flex-wrap  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/1.png", alt="")
+                        span.text.text-center Thịt các loại  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/2.png", alt="")
+                        span.text.text-center Trái cây  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/3.png", alt="")
+                        span.text.text-center Rau củ
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/4.png", alt="")
+                        span.text.text-center Cá, hải sản  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/5.png", alt="")
+                        span.text.text-center Đồ hộp   
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/6.png", alt="")
+                        span.text.text-center Nước ngọt 
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/7.png", alt="")
+                        span.text.text-center Sữa các loại  
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/8.png", alt="")
+                        span.text.text-center Bánh bông lan tươi 
+                    a.block.m-cate-item(href="products.html")
+                        span.thumb-res.square: img.fit-cover(src="css/skin/menu/9.png", alt="")
+                        span.text.text-center Củ, quả  
+                    a.block.m-cate-item(href="javascript:void(0)" class="menu-toggle")
+                        span.thumb-res.square: .absolute.d-flex.align-items-center.justify-content-center.fal.fa-bars.fa-2x 
+                        span.text.text-center Xem các nhóm khác 
+        .section 
+            .section-item.section-promo 
+                .section-heading 
+                    h1.tt.tt-section: span.text Sản phẩm khuyến mãi 
+                    .menucate
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Thịt, cá, trứng, hải sản
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Rau củ, trái cây 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Bia, nước giải khát 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Sữa các loại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Bánh kẹo các loại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Mì, miến, cháo phở 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Dầu ăn, nước chấm 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Gạo, bột, đồ khô 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Thực phẩm đông lại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Vệ sinh nhà cửa 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Đồ dùng gia đình  
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Chăm sóc thú cưng 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Gạo, bột, đồ khô 
+                .row.list-products.row-cols-3.row-cols-md-4
+                    .col: +pro_item('1.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col
+                        .block 
+                            .thumb-res.wide-lg 
+                                .ribbon: span.ribbon-sale -20%
+                                a(href="products-detail.html"): img(src='css/skin/products/bia.jpg')
+                            .info 
+                                .tt Thùng 24 lon bia Tiger 330ml
+                                .price 
+                                    span.price-sale 368.000!{'<u>đ</u>'}
+                                    del.price-origin 383.000!{'<u>đ</u>'}
+                                    span.donle (15.333đ/lon)
+                            .box-buy 
+                                a.btn-addcart.align-items-center.justify-content-center(href="#modalAddCart" role="button" data-bs-toggle="modal") Mua
+                                .quantity.d-flex 
+                                    .d-flex.align-items-center.justify-content-center.down: span.far.fa-minus
+                                    input.number(type="tel" value="1")
+                                    .d-flex.align-items-center.justify-content-center.up: span.far.fa-plus 
+
+                    .col: +pro_item('2.jpg', 'Mì chay Handy Hảo Hảo lẩu nấm ly 66g')
+                    .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Bún măng chay Vina Bích Chi gói 60g')
+                    .col: +pro_item('5.jpg', 'Hạt nêm nấm Neptune 380g')
+                    .col: +pro_item('4.jpg', 'Hạt nêm nấm hương Aji-ngon 200g')
+                    .col: +pro_item('5.jpg', 'Dầu hào chay Maggi 350g')
+                .row-btn.text-center
+                    a(href="products.html") Xem thêm 83 !{'<b>Thịt, cá, trứng, hải sản</b>'}
+                .modal.fade#modalAddCart(tabindex="-1" role="dialog" aria-hidden="true")
+                    .modal-dialog.modal-dialog-centered(role="document")
+                        .modal-content 
+                            button.close-modal(data-bs-dismiss="modal"): i.far.fa-times 
+                            .modal-body 
+                                .tt
+                                    img.mr-2(src="css/skin/products/bia.jpg", alt="" width="50px")
+                                    | Bia Tiger 330ml Thung 24 lon
+                                .select-option.row.row-cols-3
+                                    .col 
+                                        a.block.rounded.border(href="javascript:")
+                                            span.dot 
+                                            span.block.text Lon
+                                            hr
+                                            span.block.price-sale 18.900!{'<u>đ</u>'}/lon
+                                            span.block.donle (18.900!{'<u>đ</u>'}/lon)
+                                    .col 
+                                        a.block.rounded.border(href="javascript:")
+                                            span.dot 
+                                            span.block.text Lốc 6 lon 
+                                            hr
+                                            span.block.price-sale 108.900!{'<u>đ</u>'}/lon
+                                            span.block.donle (18.900!{'<u>đ</u>'}/lon)
+                                    .col 
+                                        a.block.rounded.border(href="javascript:")
+                                            span.dot.active 
+                                            span.block.text Thùng 24 lon 
+                                            hr
+                                            span.block.price-sale 368.000!{'<u>đ</u>'}/lon
+                                            del.price-origin 383.000!{'<u>đ</u>'}
+                                            span.block.donle (15.333!{'<u>đ</u>'}/lon)
+                                .d-flex.mt-3.align-items-center 
+                                    .text.fw-medium.mr-3 Số lượng 
+                                    .quantity.d-flex.mr-3 
+                                        .d-flex.align-items-center.justify-content-center.down: span.far.fa-minus
+                                        input.number(type="tel" value="1")
+                                        .d-flex.align-items-center.justify-content-center.up: span.far.fa-plus 
+                                    .btn.btn-primary chọn MUA
+        .section 
+            .section-item
+                .section-heading 
+                    h2.tt.tt-section: span.text Rau củ trái cây 
+                    .menucate
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Thịt, cá, trứng, hải sản
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Rau củ, trái cây 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Bia, nước giải khát 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Sữa các loại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Bánh kẹo các loại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Mì, miến, cháo phở 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Dầu ăn, nước chấm 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Gạo, bột, đồ khô 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Thực phẩm đông lại 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Vệ sinh nhà cửa 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Đồ dùng gia đình  
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Chăm sóc thú cưng 
+                        .carousel-cell 
+                            a.block.rounded(href="products.html"): span Gạo, bột, đồ khô 
+                .row.list-products.row-cols-3.row-cols-md-4
+                    .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                    .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                    .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                    .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+                .row-btn.text-center
+                    a(href="products.html") Xem thêm 83 !{'<b>Thịt, cá, trứng, hải sản</b>'}
+        .section 
+            .section-item
+                .section-heading 
+                    h2.tt.tt-section: span.text Thịt, cá, trứng, hải sản
+                .row.list-products.row-cols-3.row-cols-md-4 
+                    .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                    .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                    .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                    .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+                .row-btn.text-center
+                    a(href="products.html") Xem thêm 83 !{'<b>Thịt, cá, trứng, hải sản</b>'}
+                    ul.list-textlink 
+                        li: a(href="#") Sữa tươi  
+                        li: a(href="#") Sữa chua uống liền  
+                        li: a(href="#") Ngũ cốc 
+                        li: a(href="#") Sữa bột 
+                        li: a(href="#") Sữa đặc 
+                        li: a(href="#") Kẹo xốp 
+                        li: a(href="#") Hủ tiếu 
+                        li: a(href="#") Bánh canh  
+                        li: a(href="#") Mì ăn liền 
+        .section 
+            .section-item
+                .section-heading 
+                    h2.tt.tt-section: span.text Dầu ăn, nước chấm, gia vị 
+                .row.list-products.row-cols-3.row-cols-md-4
+                    .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                    .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                    .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                    .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                    .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                    .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+                .row-btn.text-center
+                    a(href="products.html") Xem thêm 83 !{'<b>Thịt, cá, trứng, hải sản</b>'}

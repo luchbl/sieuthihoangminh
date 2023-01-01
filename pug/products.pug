@@ -1,0 +1,82 @@
+extends template/template
+block vars
+    - title = 'Products'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+
+block mainer
+    main.mainer
+        .page-container 
+            .nav-bread#navBread
+                .cate-group 
+                    h1.tt.mb-0.cate-item
+                        a(href="products.html") Mì, miến, cháo, phở !{'<i></i>'} 
+                    .cate-item: a(href="products.html") Cháo gói, cháo tươi 
+                    .cate-item: a(href="products.html") Mì ăn liền 
+                    .cate-item: a(href="products.html") Hủ tiếu, Miến, Bánh canh 
+                    .cate-item: a(href="products.html") Phở, bún ăn liền 
+                    .cate-item: a(href="products.html") Bánh gạo Hàn Quốc 
+                    .cate-item.active: a(href="products.html") Mì, Nui, Bún khô 
+                    button.expandall(role="button" data-clickjs data-active="navBread" data-text="Xem thêm" data-text2="Ẩn bớt") !{'<i class="far fa-chevron-down"></i>'}
+                
+            .block-heading
+                .group-brand
+                    .nav-bread#Brands
+                        .cate-group 
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate1.jpg", alt="")
+                            .cate-item.active
+                                a(href="products.html"): img(src="css/skin/products/cate2.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate3.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate4.png", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate5.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate6.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate7.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate8.jpeg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate9.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate10.jpg", alt="")
+                            .cate-item
+                                a(href="products.html"): img(src="css/skin/products/cate11.jpg", alt="")
+                            button.expandall(role="button" data-clickjs data-active="Brands" data-text="Xem thêm" data-text2="Ẩn bớt") !{'<i class="far fa-chevron-down"></i>'}
+                .d-flex.flex-wrap.align-items-center
+                    select.form-select.form-select-sm
+                        option(value="" selected disabled) Bộ lọc Demo  
+                        option Ví dụ lọc 1
+                        option Ví dụ lọc 2
+                        option Ví dụ lọc 3
+                        option Ví dụ lọc 4
+                    select.form-select.form-select-sm
+                        option(value="" selected disabled) Sắp xếp theo
+                        option Cũ nhất
+                        option Mới nhất
+                        option Giá giảm dần
+                        option Giá giảm dần
+                            
+            .row.list-products.row-cols-3.row-cols-md-4
+                .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+                .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+            .text-center.my-3 
+                a.btn.btn-outline-info.px-5(href="javascript:") Xem thêm !{'<i class="far fa-long-arrow-down"></i>'}

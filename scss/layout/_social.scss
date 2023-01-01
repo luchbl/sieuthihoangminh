@@ -1,0 +1,28 @@
+.list-icon-social {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -.5rem;
+	> a:not(:last-of-type) {
+	    margin-right: .5rem;
+	}
+	> a {
+		display: block;
+		margin-top: .5rem;
+		background-repeat: no-repeat;
+        background-position: center center;
+        color: #fff !important;
+        font-size: 19px;
+	}
+	.bi {
+		line-height: 1;
+	}
+}
+.btn-zalo {
+    background-color: #2178f3;
+}
+.icon-zalo-chat {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-image: url('skin/zalo-chat.svg');
+}

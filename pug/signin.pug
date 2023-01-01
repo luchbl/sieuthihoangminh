@@ -1,0 +1,38 @@
+extends template/template
+block vars
+    - title = 'Đăng ký'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+    - login = false
+
+block mainer
+    main.mainer
+        .main-sm.bg-white.mb-2.p-4
+            .tt-xs.fw-medium.text-center.mb-4 Đăng ký tài khoản khách hàng.
+            form.form-validate
+                .row.row-cols-1.row-cols-md-2.gx-3
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Nhập họ tên" required)
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số điện thoại" required)
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số nhà, tên đường" required)
+                    .col
+                        .form-group.mb-3
+                            +select_tinh()
+                    .col
+                        .form-group.mb-3
+                            +select_quan()
+                    .col
+                        .form-group.mb-3
+                            +select_phuong()
+                .text-center 
+                    button.btn.btn-danger(type="submit" role="button") Tạo tài khoản  
+                    .mt-3: a.text-primary(href="logout.html") Bạn đã có tài khoản !{'<i class="far fa-chevron-right ml-1"></i>'}
+
+append js 
+    +parsley()

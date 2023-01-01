@@ -1,0 +1,75 @@
+extends template/template
+block vars
+    - title = 'Đơn hàng'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+    - login = false
+
+block mainer
+    main.mainer
+        .main-sm.bg-white.mb-2.p-3
+            .tt-xs.border-bottom.mx-n3.px-3.mb-3.pb-3.fw-medium !{'<i class="far fa-user-circle mr-1"></i>'} Thông tin cá nhân 
+            .d-flex.align-items-center.mb-3 
+                .tt.mb-0.mr-2 Hi, Le Phuong &nbsp;
+                a.text-primary.mr-auto(href="invoid.html") Đơn hàng !{'<i class="far fa-chevron-right"></i>'}
+                a.btn.btn-xs.btn-info(href="logout.html") !{'<i class="far fa-power-off mr-1"></i>'} Đăng xuất 
+            .row.row-cols-1.row-cols-md-2.gx-3
+                .col
+                    .form-group.mb-3
+                        input.form-control(type="text" value="Le Phuong")
+                .col
+                    .form-group.mb-3
+                        input.form-control(type="text" value="0912 345 678" readonly)
+            .tt.mb-1 !{'<i class="far fa-map-marker-alt mr-2"></i>'} Địa chỉ nhận hàng 
+            .form-group.mb-3
+                .form-check
+                    input.form-check-input#radio1a(type="radio" checked name="flexRadioDefault")
+                    label.form-check-label(for="radio1a") 127 Tăng Nhơn Phú - Phường Phước Long B - TP. Thủ Đức - Hồ Chí Minh
+                    a.text-info(href="javascript:") 
+            .tt.text-success(data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" role="button") !{'<i class="far fa-plus"></i>'} Thêm địa chỉ mới 
+            .collapse#collapse1
+                .row.row-cols-1.row-cols-md-2.gx-3
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Nhập họ tên")
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số điện thoại")
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số nhà, tên đường")
+                    .col
+                        .form-group.mb-3
+                            +select_tinh()
+                    .col
+                        .form-group.mb-3
+                            +select_quan()
+                    .col
+                        .form-group.mb-3
+                            +select_phuong()
+                .text-center 
+                    button.btn.btn-primary(type="button") Thêm địa chỉ mới        
+        .main-sm.bg-white.mb-2.p-3
+            .tt-xs.border-bottom.mx-n3.px-3.mb-3.pb-3.fw-medium !{'<i class="far fa-lock mr-2"></i>'} Đổi mật khẩu 
+            form.form-validate
+                .form-x-shorter
+                    .row.mb-3.row.mb-3
+                        label.col-sm-3.col-form-label Mật khẩu cũ
+                        .col-sm-9
+                            input.form-control(type="password" placeholder="Mật khẩu cũ" required)
+                    .row.mb-3.row.mb-3
+                        label.col-sm-3.col-form-label Mật khẩu mới 
+                        .col-sm-9
+                            input.form-control(type="password" placeholder="Mật khẩu mới" required)
+                    .row.mb-3.row.mb-3
+                        label.col-sm-3.col-form-label Nhập lại mật khẩu mới 
+                        .col-sm-9
+                            input.form-control(type="password" placeholder="Nhập lại mật khẩu mới" required)
+                    .row
+                        label.col-sm-3.col-form-label
+                        .col-sm-9
+                            button.btn.btn-danger(type="submit") Cập nhật mật khẩu 
+append js 
+    +parsley()
+            

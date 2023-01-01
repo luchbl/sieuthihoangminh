@@ -1,0 +1,48 @@
+.banner-lg {   
+    position: relative;
+    z-index: 11;
+    background-color: #f2f2f2;
+    background-image: url('skin/slider/banner.jpg');
+
+    .container {
+        min-height: var(--banner-height, 110px);
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-banner {
+        text-align: center;
+    }
+    #{$tt-all} {
+        color: $dark;
+    }
+    .breadcrumb {
+        padding: 0;
+    }
+}
+.breadcrumb {
+    justify-content: center;
+    color: $body-color;
+    li {
+        margin: 0;
+    }
+    .active, a {
+        color: inherit;
+        &:hover {
+            color: $body-color;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .banner-lg {
+        --banner-height: 120px;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .banner-lg {
+        --banner-height: 150px;
+        --tt-md: calc(20px + 1.05vw);
+    }
+}

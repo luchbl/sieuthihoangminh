@@ -1,0 +1,25 @@
+extends template/template
+block vars
+    - title = 'Đăng ký'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+    - login = false
+
+block mainer
+    main.mainer
+        .main-sm.bg-white.mb-2.p-4
+            .tt-xs.fw-medium.text-center.mb-4 Vui lòng đăng nhập hoặc đăng ký tài khoản để đặt hàng.
+            form.form-validate
+                .row.row-cols-1.row-cols-md-2.gx-3
+                    .col-md-6.mx-auto
+                        .form-group.mb-2
+                            input.form-control(type="tel" placeholder="Số điện thoại " required)
+                        .form-group.mb-2
+                            input.form-control(type="password" placeholder="Mật khẩu" required)
+                .text-center 
+                    button.btn.btn-danger(type="submit" role="button") Đăng nhập 
+                    .mt-3: a.text-primary(href="signin.html") Hoặc tạo tài khoản mới !{'<i class="far fa-chevron-right ml-1"></i>'}
+
+append js 
+    +parsley()

@@ -1,0 +1,137 @@
+.form-quantity {
+	display: flex;
+	.form-control,
+	.control-up,
+	.control-down {
+		height: 34px;
+		width: 34px;
+		flex: 0 0 30px;
+		text-align: center;
+		border-radius: 0;
+		color: $color-body;
+		border: 1px solid #ddd;
+	}
+	.control-up,
+	.control-down {
+		font-weight: 400;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		text-decoration: none !important;
+		
+		&:hover {
+			color: $primary;
+		}
+	}
+	.control-down {
+		order: 1;
+		border-radius: 4px 0 0 4px;
+		margin-right: -1px;
+	}
+	.control-up {
+		order: 3;
+		border-radius: 0 4px 4px 0;
+		margin-left: -1px;
+	}
+	.form-control {
+		width: 48px;
+		flex: 0 0 48px;
+		padding: 0 6px;
+		order: 2;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+.container-cart {
+	max-width: 600px;
+	border-radius: $border-radius;
+	hr {
+		margin: 18px -16px;
+	}
+	.form-group {
+		margin-bottom: 14px;
+	}
+}
+.cart--item {
+	--picture-w: 70px;
+	--price-w: 120px;
+
+	padding: 13px 8px;
+	margin: 0 -18px;
+	border-bottom: 1px solid #eee;
+	img {
+		margin: auto;
+	}
+	.form-quantity {
+		justify-content: flex-end;
+		margin-top: 5px;
+	}
+	.cell {
+        padding: 0 8px;
+	}
+	.picture {
+		width: var(--picture-w);
+		flex: 0 0 var(--picture-w);
+	}
+	del {
+		margin: 0;
+	}
+	.price {
+		width: var(--price-w);
+		flex: 0 0 var(--price-w);
+		text-align: right;
+	}
+	.info {
+		width: calc(100% - var(--picture-w) - var(--price-w));
+	}
+	.btn {
+		border-radius: 4px;
+	}
+}
+
+.form-tax-o {
+	margin: 5px 0 0;
+	padding: 10px 0;
+	display: none;
+	input:checked ~ & {
+		display: block;
+	}
+}
+.form-tax {
+	$bg: #f8f4f7;
+	position: relative;
+	border: 1px solid rgba($primary, .3);
+	border-radius: 8px;
+	background: $bg;
+	padding: 16px;
+    &:before,
+    &:after {
+    	content: '';
+    	@include absolute(null,null,100%);
+    	left: 30px;
+    	border: 8px solid transparent;
+    	border-bottom: 7px solid $bg;
+    	z-index: 2;
+    }
+    &:after {
+    	border-width: 9px;
+    	left: 30px - 1;
+    	border-bottom: 8px solid rgba($primary, .3);
+    	z-index: 1;
+    }
+    .form-group {
+    	margin-bottom: 10px;
+    }
+}
+@include media-breakpoint-up(md) {
+	.cart--item {
+		--picture-w: 120px;
+		--price-w: 140px;
+        .cell {
+        	padding: 0 14px;
+        }
+	}
+}

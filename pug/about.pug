@@ -1,0 +1,47 @@
+extends template/template
+block vars
+    - title = 'Giới thiệu'
+    - menu_active = 'about'
+    - wrapper_class = ''
+    - wrapper_id = ''
+    - home_slider = false
+    - banner_top = true
+    - banner_image = 'banner.jpg'
+    - login = false
+
+append breadcrumb 
+    +breadcrumb({}, title)
+block mainer
+    main.mainer
+        .container.py-5 
+            .row
+                .col-md-5.order-md-2.mb-4
+                    figure: +img("theme/thumb@4x3.jpg")
+                .col-md-7.order-md-1
+                    h1.tt-md.text-uppercase=title
+                    .d-width.mb-4.border-bottom.border-4.border-danger(width='30')
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    figure: +img('about/2.jpg')
+
+            .row.gx-0
+                .col-md-4.mb-5 
+                    .block.rounded-3.p-4.bg-lighter
+                        .avatar.avatar-xl.mx-auto.mb-3: +img('about/vision.png')
+                        .tt-xs.text-uppercase.text-danger.mb-3 Vision Statement
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                .col-md-4.mb-5 
+                    .block.rounded-3.p-4.bg-white
+                        .avatar.avatar-xl.mx-auto.mb-3: +img('about/mission.png')
+                        .tt-xs.text-uppercase.text-danger.mb-3 Mission Statement
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                .col-md-4.mb-5 
+                    .block.rounded-3.p-4.bg-lighter
+                        .avatar.avatar-xl.mx-auto.mb-3: +img('about/value.png')
+                        .tt-xs.text-uppercase.text-danger.mb-3 Core Values
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+
+            figure.my-4
+                +img('about/about-full.jpg')
+                p.text-muted.text-center.my-2: em Simply dummy text of the printing and typesetting industry

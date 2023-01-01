@@ -1,0 +1,62 @@
+%font-unsmooth {
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+:root {
+    --plyr-color-main: #{$primary};
+}
+#{$tt-all} {
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: darken($body-color, 5%);
+    letter-spacing: -.25px;
+    a {
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: none;
+    }
+}
+$tt: (
+    tt      var(--tt, #{$font-size})    1.4  -.25px,
+    tt-xs   var(--tt-xs, 18px)          1.4  -.375px,
+    tt-sm   var(--tt-sm, 22px)          1.4  -.5px,
+    tt-md   var(--tt-md, 24px)          1.3  -.5px,
+    tt-lg   var(--tt-lg, 28px)          1.3  -.75px,
+    tt-xl   var(--tt-xl, 34px)          1.2  -1px,
+    tt-xxl  var(--tt-xxl, 40px)         1.2  -1.25px,
+);
+@each $name, $fontSize, $lineHeight, $letterSpacing in $tt {
+    .#{$name} {
+        font-size: $fontSize;
+        line-height: $lineHeight;
+        letter-spacing: $letterSpacing;
+    }
+}
+@include media-breakpoint-up(lg) {
+    body {
+        --tt-lg:    calc(24px + 0.5vw);
+        --tt-xl:    calc(24px + 1.375vw);
+        --tt-xxl:   calc(24px + 1.75vw);
+    }
+}
+$display-text: (
+    ".display-1" -2px,
+	".display-2" -1.75px,
+	".display-3" -1.5px,
+	".display-4" -1px,
+	".display-5" -.75px,
+	".display-6" -.5px,
+);
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+	color: var(--tt-color);
+}
+@each $class, $letspc in $display-text {
+	#{$class} {
+		letter-spacing: $letspc;
+	}
+}

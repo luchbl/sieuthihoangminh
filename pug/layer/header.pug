@@ -1,0 +1,72 @@
+block header 
+    header.header#header 
+        .container.header-mi
+            a.logo(href="index.html"): img(src="css/skin/logo.png", alt="")
+            .form-search#form-search
+                .form-group
+                    button.close-search.search-toggle.far.fa-chevron-left
+                    input.form-control(type="text" placeholder="Tìm kiếm sản phẩm")
+                    button.fa-search.far.form-search-icon
+                .panel-suggest
+                    .block 
+                        .tt Tìm kiếm phổ biến  
+                        .list-tags  
+                            a.list-tags-item(href="#") sua chua 
+                            a.list-tags-item(href="#") banh mi 
+                            a.list-tags-item(href="#") thit heo 
+                            a.list-tags-item(href="#") ga ta 
+                            a.list-tags-item(href="#") suon non 
+                            a.list-tags-item(href="#") ca hoi 
+                            a.list-tags-item(href="#") sua tuoi
+                    .block 
+                        .tt Ưu đãi đặc biệt  
+                        .list-promo 
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/1.jpg")
+                                .text Bia - bánh giảm đến 26%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/2.jpg")
+                                .text Dầu ăn giảm đến 20%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/3.png")
+                                .text Bộ quà TẾT giảm đến 20%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/4.jpg")
+                                .text Giặt, xả giảm đến 30%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/5.jpg")
+                                .text Sữa chua 1 lốc tặng 1 hộp
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/6.jpg")
+                                .text Gia dụng giảm đến 49%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/1.jpg")
+                                .text Bia - bánh giảm đến 26%
+                            .list-promo-item 
+                                a.absolute(href="products.html")
+                                .thumb: img(src="css/skin/promo/1.jpg")
+                                .text Bia - bánh giảm đến 26%
+            a.link2user(href="invoid.html") Đơn hàng <br> của Bạn 
+            a.cart(href="cart.html") 
+                span.d-flex.align-items-center
+                    i.far.fa-shopping-cart: span.qty 5
+                    span.cpay
+                        span.cpay-tt.block Thanh toán 
+                        span.cpay-total.block 1.045.000đ
+        .container.mnavbar
+            .mnavbar-around.d-flex
+                .menu-toggle.btn-menu
+                    i.icon.bi.bi-list
+                    span.block.text menu
+                .searchbar.flex-fill
+                    .form-group
+                        button.absolute.search-toggle
+                        input.form-control(type="text" placeholder=" Tìm kiếm sản phẩm" read-only)
+                        button.far.fa-search

@@ -1,0 +1,92 @@
+$ProximaNova    : true;
+$Lato           : false;
+$GoogleSans     : false;
+
+$font-custom-class: (
+    "montserrat"    : "'Montserrat', $font-family;",
+    "proxima"       : "'Proxima Nova', $font-family;",
+    "google"        : "'Google Sans', $font-family;",
+);
+@each $class, $name in $font-custom-class {
+    .f-#{$class} {
+        font-family: $name;
+    }
+}
+// Font Add
+@if $GoogleSans {
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src: local("Google Sans"), url("fonts/GoogleSansPlus/GoogleSans-Light.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Light.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: local("Google Sans"), url("fonts/GoogleSansPlus/GoogleSans-Regular.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Regular.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+        src: local("Google Sans"), url("fonts/GoogleSansPlus/GoogleSans-Italic.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Italic.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        src: local("Google Sans"), url("fonts/GoogleSansPlus/GoogleSans-Medium.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Medium.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+        src: local("Google Sans"), url("fonts/GoogleSansPlus/GoogleSans-Bold.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Bold.woff") format("woff");
+    }
+}
+// ProximaNova
+@if $ProximaNova {
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: local("Proxima Nova"), url("fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"),
+            url("fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+        src: local("Proxima Nova"), url("fonts/ProximaNova/ProximaNova-Regular-Italic.woff2") format("woff2"),
+            url("fonts/ProximaNova/ProximaNova-Regular-Italic.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        src: local("Proxima Nova"), url("fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"),
+            url("fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+        src: local("Proxima Nova"), url("fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"),
+            url("fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+    }
+}

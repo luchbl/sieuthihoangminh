@@ -1,0 +1,124 @@
+extends template/template
+block vars
+    - title = 'Cart'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+    - login = false
+
+block mainer
+    main.mainer
+        .main-sm.rounded.bg-white.mb-3
+            .tt-xs.border-bottom.p-3.text-uppercase Giỏ hàng của bạn 
+            .row.cart--item.mx-0
+                .cell.picture
+                    +a('products-detail.html', 'thumb-res square rounded mb-0')
+                        +img("products/1.jpg")(class="fit-cover rounded")
+                .cell.info
+                    .tt.fw-medium
+                        span.badge.bg-danger.mr-2 -10%
+                        a(href="product-detail.html") Thịt, cá, trứng, hải sản
+                    a.btn.btn-sm.btn-outline-danger.fw-normal(role="button")
+                        i.far.fa-trash.mr-1
+                        | Xoá
+                .cell.price
+                    .price-sale.fw-medium 800.000!{'<u>đ</u>'}
+                    del.price-origin 950.000!{'<u>đ</u>'}
+                    .form-quantity
+                        input.form-control(type="text" value="1")
+                        a.control-down.fa.fa-minus(role="button")
+                        a.control-up.fa.fa-plus(role="button")
+            .row.cart--item.mx-0
+                .cell.picture
+                    +a('products-detail.html', 'thumb-res square rounded mb-0')
+                        +img("products/3.jpg")(class="fit-cover rounded")
+                .cell.info
+                    .tt.fw-medium
+                        span.badge.bg-danger.mr-2 -10%
+                        a(href="product-detail.html") Dầu ăn, nước chấm 
+                    a.btn.btn-sm.btn-outline-danger.fw-normal(role="button")
+                        i.far.fa-trash.mr-1
+                        | Xoá
+                .cell.price
+                    .price-sale.fw-medium 800.000!{'<u>đ</u>'}
+                    del.price-origin 950.000!{'<u>đ</u>'}
+                    .form-quantity
+                        input.form-control(type="text" value="1")
+                        a.control-down.fa.fa-minus(role="button")
+                        a.control-up.fa.fa-plus(role="button")
+            .text-right.my-3.px-3.pb-3
+                div
+                    | Tạm tính: 
+                    b.text-danger 1.600.000!{'<u>đ</u>'}
+                div Phí giao hàng: 0
+                .font-14.text-desc.font-italic Giá chưa bao gồm VAT
+        
+        .main-sm.rounded.bg-white.mb-3
+            .tt-xs.border-bottom.p-3.text-uppercase Thông tin đặt hàng
+            .mb-3.px-3.desc Vui lòng điền đầy đủ thông tin vào form bên dưới để đặt hàng, chúng tôi sẽ sớm liên hệ lại với bạn để xác nhận đơn hàng. Xin cảm ơn.
+            .px-3 
+                .row.row-cols-1.row-cols-md-2.gx-3
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Họ và Tên")
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số điện thoại")
+                    .col-md-12.my-2.tt Nhập địa chỉ nhận hàng
+                    .col
+                        .form-group.mb-3
+                            input.form-control(type="text" placeholder="Số nhà, tên đường")
+                    .col
+                        .form-group.mb-3
+                            +select_tinh()
+                    .col
+                        .form-group.mb-3
+                            +select_quan()
+                    .col
+                        .form-group.mb-3
+                            +select_phuong()
+                    .col-md-12
+                        .form-group.mb-3
+                            textarea.form-control(rows="4" placeholder="Ghi chú")
+                    .col-md-12
+                        .form-group
+                            .form-check
+                                input.form-check-input#radio1a(type="radio" name="flexRadioDefault")
+                                label.form-check-label(for="radio1a") Thanh toán lúc nhận hàng (COD)
+                            .form-check
+                                input.form-check-input#radio1b(type="radio" name="flexRadioDefault")
+                                label.form-check-label(for="radio1b") Thanh toán trước qua iBanking
+                                .form-tax-o
+                                    .form-tax
+                                        .text-dark.mb-2 Thanh toán với hình thức chuyển khoản qua Internet Banking
+                                        p Thông tin thanh toán:
+                                        .tt Chủ TK: NGUYEN VAN A
+                                        ul.mb-0
+                                            li.mb-0
+                                                b Vietcombank:
+                                                |  123456789 - CN: Binh Thanh
+                                            li.mb-0
+                                                b ACB:
+                                                |  123456 - CN: Binh Thanh
+                                            li.mb-0
+                                                b AGRIBANK:
+                                                |  012345678 - CN: Binh Tan
+                    .col-md-12
+                        .form-group
+                            .form-check
+                                input.form-check-input#check1a(type="checkbox")
+                                label.form-check-label(for="check1a") Xuất hoá đơn công ty
+                                .form-tax-o
+                                    .form-tax
+                                        .form-group
+                                            input.form-control(type="text" placeholder="Tên công ty")
+                                        .form-group
+                                            input.form-control(type="text" placeholder="Địa chỉ công ty")
+                                        .form-group.mb-0
+                                            input.form-control(type="text" placeholder="Mã số thuế")
+                .py-3.d-flex.flex-wrap.align-items-center
+                    .g-recaptcha.my-2.mr-3(data-sitekey="6LcbK98UAAAAALQI9rCCE3Vlm5LZtCt_Fdo7V4Wc")
+                    a.btn.btn-primary.text-uppercase.px-4(href="cart-done.html") Đặt hàng
+            
+            script(src="https://www.google.com/recaptcha/api.js")
+            

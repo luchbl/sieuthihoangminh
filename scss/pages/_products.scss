@@ -1,0 +1,132 @@
+.page-container {
+    padding: 0 .5rem;
+}
+.nav-bread {
+    display: block;
+    padding: .5px;
+    overflow: hidden;
+    margin-bottom: .5rem;
+    
+    .cate-group {
+        display: flex;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 40px;
+        margin-bottom: -40px;
+    }
+    a {
+        display: block;
+        padding: .25rem .35rem;
+        border-radius: 3px;
+    }
+    .cate-item {
+        margin-right: .75rem;
+        
+        &.tt {
+            order: -1;
+            a {
+                display: flex;
+                padding-left: 0;
+                &:after {
+                    content: '\f054';
+                    font-family: 'Font Awesome 5 Pro';
+                    margin-left: 8px;
+                    font-weight: 400;
+                }
+            }
+        }
+        &.active {
+            order: -1;
+            a {
+                background: $warning;
+                color: #fff;
+                font-weight: $semibold;
+            }
+        }
+    }
+    .expandall {
+        display: none;
+        &:before {
+            content: attr(data-text);
+            margin-right: 4px;
+        }
+        &.active {
+            background: none;
+            border-left: 1px solid rgba(#000,.1);
+            padding-left: 1rem;
+            &:before {
+                content: attr(data-text2);
+            }
+            .far:before {
+                content: '\f077';
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .nav-bread {
+        position: relative;
+        .expandall {
+            display: block;
+            @include absolute(0,0,0);
+            background: linear-gradient(to left, #f5f6f7 80%, rgba(#fff,0));
+            padding: .25rem .25rem .25rem 2rem;
+            letter-spacing: -.5px;
+            font-weight: $medium;
+        }
+        &.active {
+            overflow: visible;
+            padding-right: 85px;
+            .cate-group {
+                display: block;
+                white-space: normal;
+            }
+            .cate-item {
+                display: inline-block;
+            }
+        }
+    }
+}
+.block-heading {
+    margin-bottom: .5rem;
+    background: #fff;
+    padding: .5rem;
+    border-radius: 3px;
+    .form-select {
+        width: auto;
+        margin: 3px;
+    }
+}
+.group-brand {
+    .cate-group {
+        //flex-wrap: wrap;
+    }
+    .cate-item {
+        width: 70px;
+        flex: 0 0 auto;
+        &.active {
+            a {
+                background: #fff;
+                padding: 3px;
+                border: 1px solid $primary;
+            }
+        }
+    }
+    a {
+        padding: .25rem 0;
+        border-radius: 0;
+    }
+}
+@media (min-width: 992px) {
+    #Brands {
+        position: relative;
+        padding-right: 80px;
+        .expandall {
+            background: #fff;
+            border-left: 1px solid rgba(#000,.1);
+            padding-left: .675rem;
+        }
+    }
+}
