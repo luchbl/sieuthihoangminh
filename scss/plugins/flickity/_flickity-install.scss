@@ -54,13 +54,13 @@
 	}
 
 	&.previous {
-		left: -.75rem;
+		left: .25rem;
 		&:before {
 			transform: scale(-1,1);
 		}
 	}
 	&.next {
-		right: -.75rem;
+		right: .25rem;
 		background-size: 14px;
 	}
 	.flickity-button-icon {
@@ -123,16 +123,7 @@
 		}
 	}
 }
-@include media-breakpoint-up(md) {
-	.flickity-button {
-        &.previous {
-        	left: -18px;
-        }
-        &.next {
-        	right: -18px;
-        }
-	}
-}
+
 
 // Home slider
 .home-slider {
