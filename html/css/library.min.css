@@ -30836,6 +30836,9 @@ input:checked ~ .form-tax-o {
     #page-news {
         --menu-left-width: .75rem;
     }
+    #page-news .header-mi {
+        --menu-left-width: 275px;
+    }
     #page-news .menu {
         height: auto;
     }

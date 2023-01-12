@@ -1,6 +1,9 @@
 @include media-breakpoint-up(lg) {
 	#page-news {
 		--menu-left-width: .75rem;
+		.header-mi {
+			--menu-left-width: 275px;
+		}
 		.menu {
 			height: auto;
 			&.active {
