@@ -1,0 +1,78 @@
+extends template/template
+block vars
+    - title = 'Tin tức'
+    - wrapper_class = 'page-news'
+    - wrapper_id = 'page-news'
+    - home_slider = false
+
+block mainer
+    main.mainer
+        .page-container
+            nav(arial-label="breadcrumb")
+                ol.breadcrumb
+                    li.breadcrumb-item: +a('index.html',) Trang chủ 
+                    li.breadcrumb-item.active Tin tức
+            .container
+                .block-sidebar(data-wrapper)
+                    .mainbody.mb-4.mb-md-0(data-mainbody)
+                        .grid-news.mb-45
+                            .grid-news-item
+                                .block
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb-res.wide: +img("news/large-01.jpg")(class="fit-cover")
+                                    .info 
+                                        .tt Rau mua về thêm bước này để giữ rau tươi xanh, không bị héo cả tháng
+                            .grid-news-item
+                                .block
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb-res.wide: +img("news/large-02.jpg")(class="fit-cover")
+                                    .info 
+                                        .tt Những loại trà khi uống giúp giảm lão hóa, làm sạch da hiệu quả
+                            .grid-news-item
+                                .block
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb-res.wide: +img("news/3.jpg")(class="fit-cover")
+                                    .info 
+                                        .tt Cửa nhà bị sét khó mở, thoa dầu ăn là giải quyết được ngay
+                        .list-news.row
+                            .col-12: +news-item('1.jpg', news1, desc1)
+                            .col-12: +news-item('2.jpg', news2, desc2)
+                            .col-12: +news-item('3.jpg', news3, desc3)
+                            .col-12: +news-item('4.jpg', news4, desc4)
+                            .col-12: +news-item('5.jpg', news5, desc5)
+                            .col-12: +news-item('1.jpg', news6, desc6)
+                        +pagination2('justify-content-start')
+
+                    .sidebar(data-sidebar)
+                        div(data-stick data-width-fill)
+                            .pane.bannerqc
+                                +a('#', 'block'): +img('theme/banner-1.jpg')
+                            .pane.pane-menu.mb-4
+                                .tt-xs.text-uppercase Danh mục tin
+                                ul.menu-vertical 
+                                    li: +a('news.html', '', 'Tin công nghệ')
+                                    li: +a('news.html', '', 'Tin thế giới')
+                                    li: +a('news.html', '', 'Tin xã hội')
+                                    li: +a('news.html', '', 'Tin khoa học')
+                            .pane.pane-list
+                                .tt-xs.text-uppercase Tin xem nhiều 
+                                .pane-list-item.d-flex.block 
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb: +img('news/1.jpg')(class="fit-cover")
+                                    .info 
+                                        .tt=news1
+                                .pane-list-item.d-flex.block 
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb: +img('news/2.jpg')(class="fit-cover")
+                                    .info 
+                                        .tt=news2
+                                .pane-list-item.d-flex.block 
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb: +img('news/3.jpg')(class="fit-cover")
+                                    .info 
+                                        .tt=news3
+                                .pane-list-item.d-flex.block 
+                                    +a('news-detail.html', 'absolute')
+                                    .thumb: +img('news/4.jpg')(class="fit-cover")
+                                    .info 
+                                        .tt=news4

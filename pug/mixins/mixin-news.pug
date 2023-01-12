@@ -1,1 +1,21 @@
-//- mixin news
+- news1 = "Cách làm chả quế bằng nồi chiên không dầu vừa ngon vừa đơn giản"
+- news2 = "Mách bạn cách chiên bánh chưng không dùng dầu ăn, chỉ dùng nước, ngon lạ miệng"
+- news3 = "Hướng dẫn cách làm Fish & Chips ngon chuẩn vị người Anh"
+- news4 = "Ăn uống chuẩn 'healthy' ngày Tết với trà Betagen Kombucha"
+- news5 = "Trải nghiệm hương vị trái cây tinh khiết từ Magners Irish Berry"
+- news6 = "Có gì đặc biệt trong hộp quà Tết kẹo hỗn hợp Alpenliebe và Mentos phiên bản Tết"
+
+- desc1 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+- desc2 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+- desc3 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+- desc4 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+- desc5 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+- desc6 = "Oreo Asia kết hợp cùng BLACKPINK cho ra mắt OREO x BLACKPINK phiên bản giới hạn mới toanh, gây sốt hiện nay. Cùng tìm hiểu về dòng bánh Oreo đặc biệt này nhé!"
+
+mixin news-item(image, tt, desc)
+    .block
+        +a('news-detail.html', 'absolute')
+        .thumb-res.wide: +img('news/'+image)(class="fit-cover")
+        .info 
+            .tt=tt
+            .desc=desc

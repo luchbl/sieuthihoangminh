@@ -1,0 +1,30 @@
+extends template/template
+block vars
+    - title = 'Khuyen mai'
+    - wrapper_class = 'page-tiny'
+    - wrapper_id = 'page-tiny'
+    - home_slider = false
+
+block mainer
+    main.mainer
+        .page-container 
+            h2.tt-xs.tt-spec.text-center: span.text Sản phẩm khuyến mãi giá sốc
+            .row.list-products.row-cols-3.row-cols-md-4
+                .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+                .col: +pro_item('1.jpg', 'Dầu hào chay Maggi 350g')
+                .col: +pro_item('2.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('3.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Hạt nêm chay nấm hương Maggi 200g')
+                .col: +pro_item('5.jpg', 'Khoai tây cắt lượn sóng Mama Food 500g')
+                .col: +pro_item('6.jpg', 'Nước rửa chén Lix trà xanh can 3.53 lít')
+                .col: +pro_item('4.jpg', 'Rau quả hỗn hợp SG Food 500g')
+                .col: +pro_item('5.jpg', 'Cà ri gà chay Vissan hộp 170g')
+            .text-center.my-3 
+                a.btn.btn-outline-success.px-5(href="javascript:") Xem thêm !{'<i class="far fa-long-arrow-down"></i>'}

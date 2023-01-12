@@ -125,9 +125,12 @@ mixin pagination(className)
             +a('#', 'prev-page')
                 i.bi.bi-arrow-left.mr-2
                 | Prev
-        .page-item.page-counter
-            input(type="text" class="form-control" value="1")
-            span.text-counter / 158
+        .page-item
+            +a('#', 'page-link') 1 
+        .page-item
+            +a('#', 'page-link') 2 
+        .page-item
+            +a('#', 'page-link') 3 
         .page-item.next
             +a('#', 'next-page')
                 | Next

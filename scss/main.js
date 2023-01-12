@@ -12,7 +12,7 @@ $('<div/>', { class: 'bg-overlay', id: 'menu-backdrop' }).appendTo('#header');
 $('#menu-backdrop, #close-menu').click(function() {
     $('#menu-backdrop').fadeOut(200);
     $('body').removeClass('menu-open');
-    $('#navigate, #form-search').removeClass('active');
+    $('#navigate, #form-search, .menu').removeClass('active');
 });
 // Back to top
 $(window).on('scroll', function() {
@@ -67,6 +67,13 @@ $(window).on('load', function() {
     // wow.init();
     
     $('#dockCalc').height($('#dockMobile').height());
+
+    if($('#page-news').length) {
+        $('.menu-header .tt').on('click', function(){
+            $('.menu').toggleClass('active');
+            $('#menu-backdrop').fadeToggle(200);
+        })
+    }
 });
 
 // ************************* */
